@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单学习</title>
+</head>
+<body>
+<form action="http://localhost:8080" method="post">
+    <h1 align="center">用户注册</h1>
+    <table align="center">
+        <tr>
+            <td>
+                用户姓名：
+            </td>
+            <td>
+                <input type="text" value="输入您的姓名" name="name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                用户密码：
+            </td>
+            <td>
+                <input type="password" name="password"/>
+            </td>
+        </tr>
+        <tr>
+        <td>
+            确认密码：
+        </td>
+        <td>
+            <input type="password" name="password"/>
+        </td>
+    </tr>  <tr>
+        <td>
+            性别：
+        </td>
+        <td>
+            <input type="radio" name="a" checked="checked" value="boy">男</input>
+            <input type="radio" name="a" value="girl">女</input>
+        </td>
+    </tr>
+<tr>
+    <td>兴趣爱好：</td>
+    <td><input type="checkbox" checked="checked" value="java">java</input></td>
+    <td><input type="checkbox" value="c">c</input></td>
+    <td><input type="checkbox" value="c++">c++</input></td>
+</tr>
+<tr>
+    <td>国籍：</td>
+    <td>
+        <select name="country">
+        <option value="notselect">--请选择国家--</option>
+        <option value="china"> 中国</option>
+        <option value="usa"> 美国</option>
+    </select>
+    </td>
+</tr>
+        <tr>
+            <td>个人陈述：</td>
+            <td><textarea rows="10" cols="20">默认值</textarea>  </td>
+        </tr>
+<tr>
+    <td><input type="reset"> </td>
+    <td><input type="submit"></td>
+
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
